@@ -1,7 +1,7 @@
+import Comments from "./components/Comments/Comments";
+
 const App = () => {
-  return ( <div>
-    
-  </div> );
-}
- 
+  return <Comments />;
+};
+
 export default App;
