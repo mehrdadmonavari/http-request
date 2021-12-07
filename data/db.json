@@ -1,0 +1,104 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "name": "awdawd",
+      "email": "awdawd",
+      "body": "awdawdaw",
+      "id": 1
+    },
+    {
+      "name": "awdawd",
+      "email": "awdawd",
+      "body": "awdawdaw",
+      "id": 2
+    },
+    {
+      "name": "awdawd",
+      "email": "awdawd",
+      "body": "awdawdaw",
+      "id": 3
+    },
+    {
+      "name": "awdawd",
+      "email": "awdawd",
+      "body": "awdawdaw",
+      "id": 4
+    },
+    {
+      "name": "awdawd",
+      "email": "awdawd",
+      "body": "awdawdaw",
+      "id": 5
+    },
+    {
+      "name": "awdawd",
+      "email": "awdawd",
+      "body": "awdawdaw",
+      "id": 6
+    },
+    {
+      "name": "awdawd",
+      "email": "awdawd",
+      "body": "awdawdaw",
+      "id": 7
+    },
+    {
+      "name": "awdawd",
+      "email": "awdawd",
+      "body": "awdawdaw",
+      "id": 8
+    },
+    {
+      "name": "awdawd",
+      "email": "awdawd",
+      "body": "awdawdaw",
+      "id": 9
+    },
+    {
+      "name": "awdawd",
+      "email": "awdawd",
+      "body": "awdawdaw",
+      "id": 10
+    },
+    {
+      "name": "awdawd",
+      "email": "awdawd",
+      "body": "awdawdaw",
+      "id": 11
+    },
+    {
+      "name": "awdawd",
+      "email": "awdawd",
+      "body": "awdawdaw",
+      "id": 12
+    },
+    {
+      "name": "awdawd",
+      "email": "awdawd",
+      "body": "awdawdaw",
+      "id": 13
+    },
+    {
+      "name": "awdawd",
+      "email": "awdawd",
+      "body": "awdawdaw",
+      "id": 14
+    },
+    {
+      "name": "awdawd",
+      "email": "awdawd",
+      "body": "awdawdaw",
+      "id": 15
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
