@@ -7,29 +7,18 @@
   padding: 8px 15px;
 }
 
-.comment_list {
+.border_box {
   background-color: inherit;
-  margin: 0 20px !important;
-  padding: 10px 15px !important;
   border: 2px solid #6ea8fe;
   border-radius: 15px;
-}
-
-.comment {
-  width: 270px;
-  padding: 10px 15px;
-  margin: 15px 0;
-  background-color: #ffe5d0;
-  border: 1px solid #fd9843;
-  border-radius: 10px;
-}
-
-.comment_text {
-  font-size: 12px;
 }
 
 .comment_btn {
   font-size: 12px !important;
   padding: 5px 7px !important;
   margin-top: 5px !important;
+}
+
+.comment_full_new{
+  margin: 10px 20px !important;
 }

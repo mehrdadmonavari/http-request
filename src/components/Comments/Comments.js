@@ -1,42 +1,37 @@
+import { useState } from "react";
+import CommentList from "../CommentList/CommentList";
+import {
+  useComments,
+  useCommentsActions,
+} from "../CommentsProvider/CommentsProvider";
+import FullComment from "../FullComment/FullComment";
+import NewComment from "../NewComment/NewComment";
 import styles from "./Comments.module.css";
 
 const Comments = () => {
+  /** Inital Parameters */
+  const comments = useComments();
+
+  const [commentId, setCommentId] = useState(null);
+
+  /** Initial Methods */
+  const commentsDispatch = useCommentsActions();
+
+  const selectCommentHndler = (id) => {
+    setCommentId(id);
+  }
+
+  const addNewCommentHandler = (comment) => {
+    commentsDispatch({type: "add", comment: comment});
+  }
+
   return (
-    <main className={styles.comments + " container-fluid"}>
-      <section className={"row d-flex flex-wrap justify-content-lg-around align-items-start " + styles.comment_list}>
-        <div className={styles.comment}>
-          <h4 className="text-black my-1">title: hello world</h4>
-          <div className={styles.comment_text + " text-secondary"}>username: Mehrdad</div>
-          <div className={styles.comment_text + " text-secondary"}>email: Mehrdadmd27@gmail.com</div>
-          <button className={styles.comment_btn + " btn btn-secondary"}>show more</button>
-        </div>
-        <div className={styles.comment}>
-          <h4 className="text-black my-1">title: I am mehrdad</h4>
-          <div className={styles.comment_text + " text-secondary"}>username: Mehrdad</div>
-          <div className={styles.comment_text + " text-secondary"}>email: Mehrdadmd27@gmail.com</div>
-          <button className={styles.comment_btn + " btn btn-secondary"}>show more</button>
-        </div>
-        <div className={styles.comment}>
-          <h4 className="text-black my-1">title: comment list</h4>
-          <div className={styles.comment_text + " text-secondary"}>username: Mehrdad</div>
-          <div className={styles.comment_text + " text-secondary"}>email: Mehrdadmd27@gmail.com</div>
-          <button className={styles.comment_btn + " btn btn-secondary"}>show more</button>
-        </div>
-        <div className={styles.comment}>
-          <h4 className="text-black my-1">title: comment list</h4>
-          <div className={styles.comment_text + " text-secondary"}>username: Mehrdad</div>
-          <div className={styles.comment_text + " text-secondary"}>email: Mehrdadmd27@gmail.com</div>
-          <button className={styles.comment_btn + " btn btn-secondary"}>show more</button>
-        </div>
-        <div className={styles.comment}>
-          <h4 className="text-black my-1">title: comment list</h4>
-          <div className={styles.comment_text + " text-secondary"}>username: Mehrdad</div>
-          <div className={styles.comment_text + " text-secondary"}>email: Mehrdadmd27@gmail.com</div>
-          <button className={styles.comment_btn + " btn btn-secondary"}>show more</button>
-        </div>
+    <main className={`${styles.comments} container-fluid`}>
+      <CommentList comments={comments} onSelectComment={selectCommentHndler} />
+      <section className={`row ${styles.comment_full_new}`}>
+        <FullComment commentId={commentId}/>
+        <NewComment onAddComment={addNewCommentHandler} />
       </section>
-      <section></section>
-      <section></section>
     </main>
   );
 };

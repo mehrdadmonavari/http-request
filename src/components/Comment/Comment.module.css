@@ -1,0 +1,12 @@
+.comment {
+    width: 270px;
+    padding: 10px 15px;
+    margin: 15px 15px;
+    background-color: #ffe5d0;
+    border: 1px solid #fd9843;
+    border-radius: 10px;
+  }
+  
+  .comment_text {
+    font-size: 12px;
+  }
